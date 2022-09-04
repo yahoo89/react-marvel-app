@@ -14,7 +14,7 @@ const Button = ({ title, href, customClass }) => {
             <div className="inner">{title}</div>
           </a >
           : (
-            <button className={`button ${customClass}`}            >
+            <button className={`button ${customClass}`}>
               <div className="inner">{title}</div>
             </ button>
           )
