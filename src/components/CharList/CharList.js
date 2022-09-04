@@ -1,5 +1,6 @@
 import './charList.scss'
 import abyss from '../../resources/img/abyss.jpg'
+import Button from '../../common-components/Button'
 
 const CharList = () => {
     return (
@@ -42,9 +43,10 @@ const CharList = () => {
                     <div className="char__name">Abyss</div>
                 </li>
             </ul>
-            <button className="button button__main button__long">
-                <div className="inner">load more</div>
-            </button>
+            <Button
+                title="load more"
+                customClass="button__main button__long"
+            />
         </div>
     )
 }
