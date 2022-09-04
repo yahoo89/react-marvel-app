@@ -1,6 +1,6 @@
 
 
-const Button = ({ title, href, customClass }) => {
+const Button = ({ title, href, customClass, func }) => {
   return (
     <>
       {
@@ -14,7 +14,10 @@ const Button = ({ title, href, customClass }) => {
             <div className="inner">{title}</div>
           </a >
           : (
-            <button className={`button ${customClass}`}>
+            <button
+              className={`button ${customClass}`}
+              onClick={func}
+            >
               <div className="inner">{title}</div>
             </ button>
           )
