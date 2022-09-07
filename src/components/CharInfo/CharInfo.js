@@ -1,5 +1,6 @@
 import './charInfo.scss'
 import { Component } from 'react'
+import PropTypes from 'prop-types'
 import MarvelService from '../../services/MarvelServices'
 import ErrorMessage from '../ErrorMessage'
 import Spinner from '../Spinner'
@@ -84,7 +85,7 @@ const View = ({ char }) => {
                 <img
                     style={imgStyle}
                     src={thumbnail}
-                    alt={`${name} thumbnail`}
+                    alt={`${name}`}
                 />
                 <div>
                     <div className="char__info-name">{name}</div>
@@ -128,6 +129,10 @@ const View = ({ char }) => {
             }
         </>
     )
+}
+
+CharInfo.propTypes = {
+    charId: PropTypes.number
 }
 
 export default CharInfo

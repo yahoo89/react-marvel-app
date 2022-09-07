@@ -4,7 +4,7 @@ const ErrorMessage = () => {
   return (
     <img
       src={img}
-      alt="Error image"
+      alt="Error"
       style={{
         display: "block",
         width: "250px",
